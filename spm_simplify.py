@@ -10,6 +10,8 @@ import sentencepiece as spm
 
 if __name__ == '__main__':
     min_count = 1000
+    
+    #根据实际情况下述两个路径
     old_model = '../model/mt5-large-simplify/spiece.model'
     new_model = '../model/mt5-large-simplify/spiece_cn.model'
     new_model_keep_tokens = 'sentencepiece_cn_keep_tokens.json'
