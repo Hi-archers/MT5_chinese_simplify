@@ -64,5 +64,9 @@ if __name__ == '__main__':
     with open(r'config.yaml', 'r', encoding='utf-8') as f:
         result = f.read()
         config = yaml.load(result)
-    #simp(config)
-    verify(config)
+        
+    #simplify.py
+    #简化代码完成以后将下面simp代码注释
+    simp(config)
+    #并取消下面verify代码的注释
+    #verify(config)
