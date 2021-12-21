@@ -3,6 +3,7 @@
 总体思路采用[苏剑林老师的思路][1]的思路，但是苏老师的代码是keras的，然而现在大家更多的都是用Pytorch写代码。我找到了这个[Github简化链接][2]但是这个代码写的不详细而且有点错误。于是我把代码改正以后上传到了[Github][3]并在这儿写下详细使用方法。
 
 ###1. 生成需保留词表
+
 复制原模型文件夹中的spiece.model和config.json文件至新文件夹mt5-large-simplify并改名为spiece_cn.model，并将result.json复制到spm_simplify.py文件夹。只需要修改spm_simplify.py代码下面两行。然后执行spm_simplify.py代码对spiece.model进行tokenizer的精简，保留前259和后100个标记，中文标记保留result.json文件中的出现频率最高的3w多个token，脚本会生成sentencepiece_cn_keep_tokens.json文件，里面包含了保留的所有原始mt5token的索引。
 ```
 #spm_simplify.py
