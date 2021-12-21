@@ -1,0 +1,3 @@
+source_path: ../model/mt5-large
+
+target_path: ../model/mt5-large-simplify
